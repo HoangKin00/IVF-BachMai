@@ -1,0 +1,71 @@
+.doctor_ivf_1_0_0 {
+  padding: 30px 0 0;
+  &__box {
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__boxMb {
+    display: none;
+  }
+  &__detail {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 14%;
+    text-align: center;
+    padding: 15px 10px;
+  }
+  &__name {
+    color: #008000;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  &__text {
+    color: #505050;
+    font-weight: 500;
+  }
+  @media (max-width: 820px) {
+    &__name {
+      font-size: 15px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 767px) {
+    &__box,
+    &__detail {
+      display: none;
+    }
+    &__boxMb {
+      display: block;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+    &__name {
+      font-size: 17px;
+      text-align: center;
+      padding: 10px 0 5px;
+      br {
+        display: none;
+      }
+    }
+    &__text {
+      font-size: 15px;
+      text-align: center;
+    }
+    .controls li {
+      color: #008000;
+    }
+    .tns-nav {
+      display: none;
+    }
+  }
+}

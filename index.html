@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVF Bạch Mai</title>
+    <link rel="stylesheet" href="https://huudinh.github.io/media/css/style-min.css">
+    <script src="https://huudinh.github.io/assets/js/lib.min.js"></script>
+    <script src="https://huudinh.github.io/assets/js/tiny-slider.min.js"></script>
+    <script src="https://huudinh.github.io/assets/js/module.min.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div>
+        <header class="header_ivf_1_0_0" id="header_ivf_1_0_0"></header>
+        <div class="header_ivf_1_0_0__bg" id="headerBg"></div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- SLIDER -->
+    <section class="slider_ivf_1_0_0" id="slider_ivf_1_0_0"></section>
+    <!-- END SLIDER -->
+
+    <!-- FIGURES -->
+    <section class="figures_ivf_1_0_0" id="figures_ivf_1_0_0"></section>
+    <!-- END FIGURES -->
+
+    <!-- DOCTOR -->
+    <section class="doctor_ivf_1_0_0" id="doctor_ivf_1_0_0"></section>
+    <!-- END DOCTOR -->
+
+    <!-- EXPERT -->
+    <section class="expert_ivf_1_0_0" id="expert_ivf_1_0_0"></section>
+    <!-- END EXPERT -->
+
+    <!-- VIDEO -->
+    <section class="video_ivf_1_0_0" id="video_ivf_1_0_0"></section>
+
+    <script>
+
+        //Slider Step by Step
+        var slide_step = tns({
+            container: '#slide_step',
+            items: 1,
+            controlsContainer: '#slide_stepControl',
+            navAsThumbnails: true,
+            autoplay: false,
+            autoplayTimeout: 1000,
+            autoplayButton: '#customize-toggle',
+            gutter: 10,
+            responsive: {
+                767: {
+                    items: 3,
+                },
+            },
+        });
+    </script>
+    <!-- END VIDEO -->
+
+    <!-- PROCESS -->
+    <section class="process_ivf_1_0_0" id="process_ivf_1_0_0"></section>
+    <!-- END PROCESS -->
+
+    <!-- TECHNIQUE -->
+    <section class="technique_ivf_1_0_0" id="technique_ivf_1_0_0"></section>
+    <!-- END TECHNIQUE -->
+
+    <!-- TECHNOLOGY -->
+    <section class="technology_ivf_1_0_0" id="technology_ivf_1_0_0"></section>
+    <!-- END TECHNOLOGY -->
+
+    <!-- EXPENSE -->
+    <section class="expense_ivf_1_0_0" id="expense_ivf_1_0_0"></section>
+    <!-- END EXPENSE -->
+
+    <!-- IMAGE -->
+    <section class="image_ivf_1_0_0" id="image_ivf_1_0_0"></section>
+    <!-- END IMAGE -->
+
+    <!-- FOOTER -->
+    <footer class="footer_ivf_1_0_0" id="footer_ivf_1_0_0"></footer>
+    <!-- END FOOTER -->
+
+
+</body>
+
+<script>
+    renderModule('Header', 'header_ivf_1_0_0', '', 'logic');
+    renderModule('Home', 'slider_ivf_1_0_0', '', '');
+    renderModule('Home', 'figures_ivf_1_0_0', '', '');
+    renderModule('Home', 'doctor_ivf_1_0_0', '', 'logic');
+    renderModule('Home', 'expert_ivf_1_0_0', '', '');
+    renderModule('Home', 'video_ivf_1_0_0', '', 'logic');
+    renderModule('Home', 'process_ivf_1_0_0', '', '');
+    renderModule('Home', 'technique_ivf_1_0_0', '', '');
+    renderModule('Home', 'technology_ivf_1_0_0', '', '');
+    renderModule('Home', 'expense_ivf_1_0_0', '', '');
+    renderModule('Home', 'image_ivf_1_0_0', '', '');
+    renderModule('Footer', 'footer_ivf_1_0_0', '', '');
+</script>
+
+</html>
