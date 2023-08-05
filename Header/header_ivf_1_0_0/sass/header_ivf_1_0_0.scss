@@ -12,14 +12,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0 0;
+    padding: 10px 0;
   }
   &__detail {
     width: 80%;
   }
   &__logo {
     margin: 0;
-    max-width: 90px;
+    max-width: 80px;
     img {
       display: block;
       width: 100%;
@@ -32,7 +32,7 @@
   }
   &__text {
     width: 60%;
-    padding: 6px 20px;
+    padding: 5px 20px;
     background: #008000;
     color: #fff;
     font-weight: 500;
@@ -80,7 +80,7 @@
     font-weight: 600;
     cursor: pointer;
     color: #505050;
-    padding: 15px 0;
+    padding: 10px 0;
     transition: all 0.2s linear;
     &:hover {
       color: #008000;
@@ -103,12 +103,11 @@
   &__dropdown {
     transition: all 0.2s linear;
     position: absolute;
-    top: 95px;
+    top: 90px;
     width: auto;
     max-width: 1000px;
     background: #fff;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 7px;
     border: 1px solid rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -128,7 +127,7 @@
       list-style: none;
       padding: 0;
       margin: 0;
-      font-size: 12px;
+      font-size: 14px;
       li {
         border-bottom: 1px solid #f1f1f1;
         padding-bottom: 8px;
@@ -172,10 +171,13 @@
   }
 
   @media (max-width: 1200px) {
-    padding: 10px 0;
+    padding: 10px 0 0;
     .container {
       padding-left: 0;
       padding-right: 0;
+    }
+    &__box {
+      padding: 5px 0;
     }
     &__textMb {
       display: block;
@@ -208,7 +210,7 @@
     }
     &__link {
       padding: 5px 0 10px 15px;
-      border-bottom: 1px dashed #505050;
+      border-bottom: 1px solid #eaeaea;
     }
     &__logo {
       max-width: 60px;
@@ -216,7 +218,7 @@
     &__logoMb {
       display: block;
       margin: 0;
-      max-width: 70px;
+      max-width: 60px;
       img {
         width: 100%;
         margin: 10px auto 0;
@@ -292,7 +294,7 @@
               }
             }
             a {
-              color: #0056a4;
+              color: #505050;
             }
           }
         }
@@ -303,7 +305,7 @@
     }
   }
   @media (max-width: 767px) {
-    padding: 10px 0 5px;
+    padding: 5px 0 0;
     .container {
       padding-right: 15px;
       padding-left: 15px;
@@ -313,11 +315,11 @@
       font-weight: 500;
     }
     &__text {
-      padding: 5px 0;
+      padding: 5px 0 3px;
       font-size: 11px;
     }
-    &__box {
-      padding: 5px 0 0;
+    &__logo {
+      max-width: 52px;
     }
   }
 
@@ -327,11 +329,10 @@
       padding-left: 10px;
     }
     &__text {
-      padding: 5px 0;
       font-size: 9px;
     }
     &__logo {
-      max-width: 58px;
+      max-width: 50px;
     }
   }
   @media (max-width: 280px) {
