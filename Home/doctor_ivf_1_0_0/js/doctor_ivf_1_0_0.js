@@ -1,14 +1,15 @@
-var slider = tns({
-  container: ".slider",
+var slide_step2 = tns({
+  container: "#slide_step2",
   items: 1,
-  slideBy: "page",
+  controlsContainer: "#slide_stepControl2",
+  navAsThumbnails: true,
   autoplay: false,
-  autoplayButtonOutput: false,
-  mouseDrag: true,
-  lazyload: true,
-  lazyloadSelector: ".tns-lazy",
-  autoHeight: true,
-  nav: true,
-  navPosition: "bottom",
-  controlsContainer: "#slider-nav"
+  autoplayTimeout: 1000,
+  autoplayButton: "#customize-toggle",
+  gutter: 10,
+  responsive: {
+    767: {
+      items: 7
+    }
+  }
 });
