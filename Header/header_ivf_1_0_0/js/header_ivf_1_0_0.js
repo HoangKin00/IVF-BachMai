@@ -11,7 +11,10 @@ const menuItem = document.querySelectorAll(".header_ivf_1_0_0__item");
 // console.log(menuItem);
 menuItem.forEach((item) => {
   item.addEventListener("click", () => {
-    item.classList.toggle("open");
+    menuItem.forEach((item) => {
+      item.classList.remove("open");
+    });
+    item.classList.add("open");
   });
 });
 
