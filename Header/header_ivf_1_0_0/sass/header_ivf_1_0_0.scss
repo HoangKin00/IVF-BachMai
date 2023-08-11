@@ -288,6 +288,10 @@
       font-size: 25px;
     }
 
+    &__link:last-child::after {
+      content: none;
+    }
+
     &__item:hover {
       .header_ivf_1_0_0__dropdown {
         display: block;
