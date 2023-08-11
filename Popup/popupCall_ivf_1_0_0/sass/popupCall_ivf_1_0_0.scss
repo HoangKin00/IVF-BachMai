@@ -8,27 +8,34 @@
 
 .popupCall_ivf_1_0_0 {
     &__modalBox {
-        margin-top: -40vh;
+        margin-top: -32vh;
     }
 
     &__box {
         .modal-header {
             padding: 0;
             border-bottom: unset;
+            border-radius: 4px;
         }
         .modal-title {
             text-align: center;
             padding-top: 20px;
             .logo{
-                width: 24%;
+                width: 102px;
             }
             img {
-                margin-left: 30px;
+                margin-left: 27px;
             }
         }
         .modal-box {
             max-width: 350px;
-            min-width: 300px;
+            min-width: 350px;
+            @media (max-width: 414px) {
+                min-width: 380px;
+            }
+            @media (max-width: 390px) {
+                min-width: 355px;
+            }
             @media (max-width: 280px) {
                 min-width: 250px;
             }
@@ -86,16 +93,16 @@
                 margin-left: 5px;
                 color: #007f00;
                 text-decoration: revert;
-                text-decoration: underline;
+                text-decoration: none;
             }
         }
     }
     input {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 18px;
         font-size: 13px;
-        padding: 8px 12px;
-        border: 1px solid #a6bcdb;
+        padding: 10px 12px;
+        border: 1px solid #008000;
         border-radius: 6px;
     }
     &__click {
@@ -109,7 +116,7 @@
             margin: 0px auto 10px;
             display: flex;
             justify-content: center;
-            border-radius: 20px;
+            border-radius: 30px;
             font-weight: bold;
             @media (max-width: 767px) {
                 width: 100%;
@@ -134,7 +141,7 @@
         display: flex;
         justify-content: center;
         border-radius: 6px;
-        padding: 8px 12px;
+        padding: 10px 12px;
         align-items: center;
         a {
             margin-left: 5px;
