@@ -1,69 +1,41 @@
 .popupRegist_ivf_1_0_0 {
-    font-size: 14px;
-    input,
-    textarea {
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-    }
-    &_overlayForm {
-        font-size: 14px;
-    }
-    &_overlay {
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-        height: 100%;
-        z-index: 10;
-        opacity: 0.7;
-        background: rgba(0, 0, 0, 0.9);
-    }
-    &_logo{
-        background: url(../images/logo.svg) center 0 no-repeat;
-        height: 70px;
-        margin-bottom: 15px;
-        @media (max-width: 414px){
-            height: 80px;
-        }
-    }
-    &_boxTv {
-        position: absolute;
-        width: 100%;
-        top: 60px;
-        article {
-            background: #fff;
-            z-index: 11;
-            margin: 50px auto;
-            padding: 20px 0;
-            width: 350px;
-            position: relative;
-            border-radius: 4px;
-            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-        }
-        #popupRegist_ivf_1_0_0_closePopup {
-            background-position: 0 0;
-            background-repeat: no-repeat;
-            width: 17px;
-            height: 17px;
-            position: absolute;
-            top: -18px;
-            right: -24px;
-            transition: all 0.5s ease 0s;
-            font-family: arial;
-            background-image: url(../images/popup_close.png);
-            &:hover {
-                transform: rotate(360deg)
+    &__box {
+        .modal-title {
+            .logo {
+                display: block;
+                margin: 10px auto;
             }
-            @media (max-width: 375px) {
-                top: 10px;
-                right: 10px;
+        }
+        .modal-box {
+            max-width: 350px;
+            min-width: 300px;
+        }
+        .modal-body {
+            padding: 3px 0;
+            input {
+                width: 100%;
+                margin-bottom: 10px;
+                font-size: 13px;
+                padding: 8px 12px;
+                border: 1px solid #a6bcdb;
+                border-radius: 6px;
+            }
+            textarea {
+                width: 100%;
+                margin-bottom: 10px;
+                font-size: 13px;
+                padding: 8px 12px;
+                border: 1px solid #a6bcdb;
+                border-radius: 6px;
             }
         }
     }
-    &_headerBox {
+    &__modalBox {
+        margin-top: -35vh;
+    }
+    &__headerBoxTitle {
         text-align: center;
         position: relative;
-        &_tt {
             background: #2d962d;
             margin: 0 0 8px;
             padding: 13px 30px 12px 30px;
@@ -74,77 +46,8 @@
             @media (max-width: 375px) {
                 font-size: 15px;
             }
-        }
-        img {
-            display: block;
-            padding: 20px 0;
-            margin: 0 auto;
-        }
     }
-    &_contentBox {
-        padding: 5px 20px 1px;
-        input,
-        textarea {
-            padding: 9px 12px;
-        }
-        &>div:nth-child(1) {
-            input,
-            textarea {
-                background: #ddd;
-                border: none;
-            }
-            input {
-                width: 100%;
-                margin-bottom: 4px;
-                font-size: 13px;
-            }
-            select {
-                width: 100%;
-                margin-bottom: 5px;
-                padding: 5px 8px;
-                background: #ddd;
-                border: 1px solid #adadad;
-                color: #444;
-                cursor: pointer;
-            }
-            textarea {
-                width: 100%;
-                font-family: arial;
-                font-size: 13px;
-                margin-bottom: 4px;
-                resize: none;
-                height: 96px;
-            }
-        }
-        &>div:nth-child(2) {
-            input {
-                width: 100%;
-                background: #40a040;
-                color: #fff;
-                border: none;
-                cursor: pointer;
-                font-size: 14px;
-                margin-bottom: 5px;
-                &#popup_regist_1_0_1_clickSent {
-                    font-weight: bold;
-                }
-            }
-            .note {
-                text-align: center;
-                display: block;
-                padding: 5px;
-                font-size: 11px;
-                color: #999;
-                i {
-                    background: url(../images/icon-lock.png) 0 5px no-repeat;
-                    display: inline-block;
-                    width: 13px;
-                    height: 14px;
-                }
-            }
-        }
-    }
-    &_contact {
+    &__contact {
         text-align: center;
         color: #696969;
         font-size: 13px;
@@ -163,51 +66,9 @@
             margin: 0 5px;
         }
     }
-    &_clickPopup {
-        background-color: red;
-        text-decoration: underline;
-        color: white;
-        padding: 10px;
-        width: 150px;
-        height: 30px;
-        &:hover {
-            cursor: pointer;
-            background-color: #0192cd;
-        }
-    }
-    @media screen and (max-width: 375px) {
-        &_boxTv article {
-            width: 345px;
-        }
-        &_boxTv #close {
-            top: 12px;
-            right: 12px;
-        }
-    }
-    @media screen and (max-width: 360px) {
-        .popup_regist_1_0_1_boxTv article {
-            width: 325px;
-        }
-    }
-    @media screen and (max-width: 320px) {
-        &_boxTv article {
-            width: 300px;
-        }
-        &_contentBox>div:nth-child(2) .popup_regist_1_0_1_contact p {
-            margin: 3px 0;
-        }
-        &_contentBox {
-            padding: 8px 10px 10px;
-        }
-        .pop_tt p {
-            padding: 2px 30px 14px;
-            background: none;
-        }
-        &_contentBox>div:nth-child(2) .note {
-            display: none;
-        }
-        &_contentBox>div:nth-child(1) textarea {
-            height: 70px;
-        }
+    &__clickSent {
+        background: linear-gradient(90deg, rgb(0, 128, 0) 0%, rgb(0, 128, 0) 75%, rgb(0, 128, 0) 100%);
+        color: #fff;
+        border: none;
     }
 }
