@@ -57,7 +57,7 @@
         padding: 0 22px;
         font-size: 16px;
         font-weight: 500;
-        color: #5678a8;
+        color: #333;
         margin: 0;
         margin-top: 10px;
         @media (max-width: 428px) {
@@ -81,7 +81,7 @@
             display: flex;
             align-items: center;
             font-size: 14px;
-            color: #153d75;
+            color: #333;
             justify-content: center;
             img {
                 width: 5%;
@@ -128,7 +128,7 @@
         margin: 0;
         text-align: center;
         font-size: 16px;
-        color: #5678a8;
+        color: #007f00;
         font-weight: 500;
     }
     &__more {
