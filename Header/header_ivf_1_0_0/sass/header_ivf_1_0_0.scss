@@ -163,6 +163,7 @@
       transition: all 0.3s ease-out 0s;
       left: 0;
       width: 100%;
+      align-items: baseline;
     }
     &:hover {
       .header_ivf_1_0_0__dropdown {
@@ -256,7 +257,7 @@
       left: 0;
       bottom: 0;
       background: #fff;
-      width: 250px;
+      width: 300px;
       z-index: 20;
       transform: translateX(-100%);
       transition: all 0.3s linear;
