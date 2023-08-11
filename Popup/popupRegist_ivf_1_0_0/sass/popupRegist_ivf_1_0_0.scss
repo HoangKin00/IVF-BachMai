@@ -33,7 +33,7 @@
                 width: 100%;
                 margin-bottom: 10px;
                 font-size: 13px;
-                padding: 8px 12px;
+                padding: 5px 12px;
                 border: 1px solid #008000;
                 border-radius: 6px;
             }
@@ -74,7 +74,7 @@
             margin: 6px 0 12px;
             font-size: 14px;
             font-weight: 600;
-            color: #153d75;
+            color: #333;
             a {
                 color: #008000;
                 text-decoration: none;
@@ -98,5 +98,14 @@
         justify-content: center;
         border-radius: 30px !important;
         font-weight: bold;
+    }
+    @media (max-width: 414px) {
+        &__box {
+            .modal-body {
+                input {
+                    padding: 8px 12px;
+                }
+            }
+        }
     }
 }
