@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popupCall_ivf_1_0_0</title>
+    <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/lib.min.css">
+    <link rel="stylesheet" href="sass/popupCall_ivf_1_0_0.min.css">
+    <script src="https://huudinh.github.io/assets/js/lib.min.js"></script>
+    <script src="https://huudinh.github.io/assets/js/module.min.js"></script>
+</head>
+
+<body>
+    <button type="button" class="modal-btn" data-modal="modal-top">button</button>
+    <section class="popupCall_ivf_1_0_0">
+        <div class="popupCall_ivf_1_0_0__box">
+            <div class="modal" id="modal-top">
+                <div class="modal-bg"></div>
+                <div class="popupCall_ivf_1_0_0__modalBox modal-box animate-top">
+                    <div class="modal-header">
+                        <div class="modal-close">×</div>
+                        <div class="modal-title">
+                            <img width="84" height="83" class="logo" src="images/logo.svg" alt="">
+                            <p class="popupCall_ivf_1_0_0__heading mt20 mb">Để lại số điện thoại <br> IVF Bạch Mai sẽ
+                                gọi
+                                tư vấn cho bạn</p>
+                            <div class="modal-body">
+                                <div>
+                                    <div style="display:none">
+                                        <input type="text" placeholder="Họ và tên (*)" value="Yêu Cầu Gọi Lại"
+                                            id="iname" name="iname">
+                                        <textarea type="text" placeholder="Nhu cầu tư vấn" id="itext"
+                                            name="itext"></textarea>
+                                        <input id="iemail" name="iemail" value="no@email.benhvienthammykangnam.vn"
+                                            type="hidden" placeholder="Email">
+                                        <input type="hidden" id="gclid_field" name="gclid_field"
+                                            value="CjwKCAjw9LSSBhBsEiwAKtf0n5dsr_8Iz-GGzjyU_1NzaY3gd3tSKS7aSHplpkAu9LLCRH-BCJTRlxoCNo8QAvD_BwE">
+                                        <input type="hidden" id="name_campaign" name="name_campaign"
+                                            value="[Kangnam] Yêu Cầu Gọi Lại">
+                                        <input type="hidden" id="code_campaign" name="code_campaign" value="583971142">
+                                    </div>
+                                    <input id="imob" name="imob" type="textbox"
+                                        placeholder="Nhập số điện thoại của bạn*:">
+                                </div>
+                                <div class="popupCall_ivf_1_0_0__click">
+                                    <input onclick="validateForm('popup'),ants_sent_phone(this);" id="pop_sent"
+                                        type="button" value="NHẬN TƯ VẤN NGAY">
+                                </div>
+                                <div class="popupCall_ivf_1_0_0__contact">
+                                    <p class="popupCall_ivf_1_0_0__or mb mt20">Hoặc </p>
+                                </div>
+                            </div>
+                            <div class="popupCall_ivf_1_0_0__des">
+                                <div class="popupCall_ivf_1_0_0__phone pc ">
+                                    <p> Tư vấn trực tiếp 24/7: <span>
+                                            1900.633.988
+                                        </span></p>
+                                </div>
+                                <a class="popupCall_ivf_1_0_0__more mb" href="tel:19006466">Liên hệ <img width="23"
+                                        height="23" src="images/phone-call.svg" alt=""> <span>1900.633.988
+                                    </span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="js/popupCall_ivf_1_0_0.js"></script>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popupSearch_ivf_1_0_0</title>
+    <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/lib.min.css">
+    <link rel="stylesheet" href="sass/popupSearch_ivf_1_0_0.min.css">
+    <script src="https://huudinh.github.io/assets/js/lib.min.js"></script>
+    <script src="https://huudinh.github.io/assets/js/module.min.js"></script>
+</head>
+
+<body>
+    <button type="button" class="modal-btn btn btn-danger btnkn1km" data-modal="modal-zoom">button</button>
+    <div class="modal popupSearch_ivf_1_0_0" id="modal-zoom" style="display: none;">
+        <div class="modal-bg"></div>
+        <div class="popupSearch_ivf_1_0_0__modalBox modal-box animate-zoom">
+            <div class="modal-header">
+                <div class="modal-close">×</div>
+                <div class="popupSearch_ivf_1_0_0__title">Tìm Kiếm Nhanh</div>
+            </div>
+            <div class="modal-body">
+                <form action="/" id="searchform" name="searchform" method="get" onsubmit="return checkSearch()">
+                    <div class="popupSearch_ivf_1_0_0__search">
+                        <input id="s" name="s" type="text" placeholder="Nhập từ khóa tìm kiếm">
+                        <button type="submit"><img src="images/header-search-white.svg"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
