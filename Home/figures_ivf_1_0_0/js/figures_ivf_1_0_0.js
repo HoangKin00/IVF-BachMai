@@ -1,12 +1,15 @@
 const numberElements = document.querySelectorAll(".figures_ivf_1_0_0__number");
 
-const targetNumbers = [30, 40, 50, 60];
+const targetNumbers = [25, 70, 200, 20];
 
-function runNumber(element, target) {
+function runNumber(element, target, text) {
+  if (text === undefined) {
+    text = '';
+  }
   let currentNumber = 0;
   const interval = setInterval(() => {
-    element.textContent = currentNumber.toString().padStart(2, "0");
-    currentNumber++;
+    element.textContent = `${currentNumber.toString().padStart(2, "0")}${text}`;
+    currentNumber += 5;
     if (currentNumber > target) {
       clearInterval(interval);
     }
@@ -14,5 +17,10 @@ function runNumber(element, target) {
 }
 
 numberElements.forEach((element, index) => {
-  runNumber(element, targetNumbers[index]);
+  if (index === 1) {
+    runNumber(element, targetNumbers[index], '%');
+  }
+  else {
+    runNumber(element, targetNumbers[index]);
+  }
 });
