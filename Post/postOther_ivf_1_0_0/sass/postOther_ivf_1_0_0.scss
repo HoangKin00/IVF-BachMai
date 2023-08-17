@@ -1,4 +1,11 @@
 .postOther_ivf_1_0_0 {
+    &__tt {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 52px;
+        margin: 10px 0;
+        text-transform: uppercase;
+    }
     &__item {
         display: flex;
         flex-wrap: wrap;
@@ -13,7 +20,7 @@
             display: block;
         }
     }
-    &__text {
+    &__body {
         flex: 1;
     }
     &__title {
