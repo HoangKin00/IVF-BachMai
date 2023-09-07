@@ -47,7 +47,7 @@
     <section class="screen2">
         <div class="container">
             <div class="des">
-                HÀNG NGÀN EM BÉ IVF CHÀO ĐỜI KHỎE MẠNH
+                HÀNG NGÀN EM BÉ IVF <br> CHÀO ĐỜI KHỎE MẠNH
             </div>
             <div class="text">
                 Thành công của Đơn vị là nhờ có đội ngũ y bác sĩ được tiếp cận với các kỹ thuật tiên tiến tại các trung
@@ -89,6 +89,61 @@
             </div>
         </div>
     </section>
+    <script>
+        lazyShowScreen('img.lazy', 'src');
+
+        function myLazy(section, attr, sectionDelete) {
+            const section_loads = document.querySelectorAll(section);
+            let winTop = window.innerHeight;
+
+            for (let i = 0; i < section_loads.length; i++) {
+                let pos_top = section_loads[i].getBoundingClientRect().top;
+                let pos_bottom = section_loads[i].getBoundingClientRect().bottom;
+                if (pos_top <= winTop && pos_bottom >= 0) {
+                    if (sectionDelete) {
+                        section_loads[i].classList.remove(sectionDelete);
+                        section_loads[i].classList.add(attr);
+
+                    } else if (attr == 'srcset') {
+                        section_loads[i].srcset = section_loads[i].dataset.srcset;
+                        section_loads[i].classList.remove('lazy');
+
+                    } else if (attr == 'src') {
+                        section_loads[i].src = section_loads[i].dataset.src;
+                        section_loads[i].classList.remove('lazy');
+
+                    } else {
+                        console.log(`Sorry, we are out of ${attr}.`);
+                    }
+                }
+            }
+        }
+
+        function lazyShowScreen(section, attr, sectionDelete) {
+            const section_loads = document.querySelectorAll(section);
+            let win_height = screen.height;
+
+            for (let i = 0; i < section_loads.length; i++) {
+                if (section_loads[i].getBoundingClientRect().top < win_height) {
+                    if (sectionDelete) {
+                        section_loads[i].classList.remove(sectionDelete);
+                        section_loads[i].classList.add(attr);
+
+                    } else if (attr == 'srcset') {
+                        section_loads[i].srcset = section_loads[i].dataset.srcset;
+                        section_loads[i].classList.remove('lazy');
+
+                    } else if (attr == 'src') {
+                        section_loads[i].src = section_loads[i].dataset.src;
+                        section_loads[i].classList.remove('lazy');
+
+                    } else {
+                        console.log(`Sorry, we are out of ${attr}.`);
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
