@@ -9,6 +9,19 @@ menuItem.forEach((item) => {
   });
 });
 
+const menuItemDrop = document.querySelectorAll(
+  ".header_ivf_1_0_0__dropItemTitle"
+);
+// console.log(menuItem);
+menuItemDrop.forEach((item) => {
+  item.addEventListener("click", () => {
+    menuItem.forEach((item) => {
+      item.classList.remove("drop");
+    });
+    item.classList.add("drop");
+  });
+});
+
 document.getElementById("headerMenuBtn").addEventListener("click", () => {
   document.getElementById("headerSideBar").classList.add("show");
   document.getElementById("headerBg").style.display = "block";
@@ -20,8 +33,6 @@ document.getElementById("headerBg").addEventListener("click", () => {
     item.classList.remove("open");
   });
 });
-
-
 
 window.onscroll = () => {
   scrollFunction();
