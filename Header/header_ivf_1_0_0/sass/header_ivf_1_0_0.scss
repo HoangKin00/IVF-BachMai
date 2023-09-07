@@ -163,7 +163,6 @@
     border: 1px solid rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.1);
     ul li {
-      border-bottom: 1px solid #f1f1f1;
       padding: 7px 0;
       color: #000;
       &:hover a {
@@ -267,8 +266,8 @@
       display: none;
     }
     &__link {
-      padding: 5px 0 10px 15px;
-      border-bottom: 1px solid #eaeaea;
+      padding: 2px 0 8px 15px;
+      border-bottom: 1px dotted #ddd;
     }
     &__logo {
       max-width: 60px;
@@ -344,6 +343,12 @@
     &__item.mega_menu .header_ivf_1_0_0__dropdown {
       box-shadow: none;
     }
+    .header_ivf_1_0_0__dropItemTitle:hover {
+      background-color: #eee;
+    }
+    &__dropItem {
+      width: 268px;
+    }
     &__dropdown {
       width: 100%;
       display: none;
@@ -353,10 +358,11 @@
       border: none;
       margin: 0;
       border-radius: 0;
-      padding: 5px 0 10px 15px;
+      padding: 2px 15px;
       ul {
         li {
-          border-bottom: 0px;
+          border-bottom: 1px dotted #ccc;
+          padding: 6px 0;
         }
       }
       &Cate {
@@ -392,8 +398,13 @@
     &__dropItemTitle {
       &:hover {
         .header_ivf_1_0_0__dropItemSmall {
-          padding: 5px 15px 0;
+          padding: 5px 15px;
+          border-bottom: 1px dotted #eaeaea;
+          border-radius: 0;
         }
+      }
+      &.drop {
+        border-bottom: none;
       }
     }
   }
@@ -427,14 +438,14 @@
     &__logo {
       max-width: 50px;
     }
-  }
-  @media (max-width: 280px) {
     &__detail {
       width: 230px;
     }
     &__dropItem {
-      width: 200px;
+      width: 215px;
     }
+  }
+  @media (max-width: 280px) {
     &__item {
       &:hover {
         .header_ivf_1_0_0__dropdown {
