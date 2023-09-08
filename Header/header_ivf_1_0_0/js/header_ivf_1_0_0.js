@@ -15,7 +15,7 @@ const menuItemDrop = document.querySelectorAll(
 // console.log(menuItem);
 menuItemDrop.forEach((item) => {
   item.addEventListener("click", () => {
-    menuItem.forEach((item) => {
+    menuItemDrop.forEach((item) => {
       item.classList.remove("drop");
     });
     item.classList.add("drop");
