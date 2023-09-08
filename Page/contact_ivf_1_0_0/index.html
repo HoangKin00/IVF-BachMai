@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/lib.min.css">
     <link rel="stylesheet" href="sass/style.min.css">
     <script src="https://huudinh.github.io/assets/js/module.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -16,16 +17,50 @@
             <div class="screen1__box">
                 <div class="screen1__form">
                     <p>form đăng ký</p>
+                    <div class="modal-body">
+                        <div>
+                            <input id="iname" name="iname" type="textbox" required="" placeholder="Họ tên*:"
+                                fdprocessedid="ca8rn5">
+                            <input id="imob" name="imob" type="textbox" required="" placeholder="Điện thoại*:"
+                                fdprocessedid="o5hxq8">
+                            <input type="hidden" style="display:none" id="iemail" name="iemail" placeholder="Email:">
+                            <textarea id="itext" type="hidden" name="itext" value=""
+                                placeholder="Dịch vụ quan tâm"></textarea>
+                            <input type="hidden" id="gclid_field" name="gclid_field" value="">
+                            <input type="hidden" id="code_campaign" name="code_campaign" value="884301791">
+                            <input type="hidden" id="name_campaign" name="name_campaign" value="[IVF Bạch Mai] Tư Vấn">
+                        </div>
+                        <div>
+                            <input class="popupRegist_ivf_1_0_0__clickSent" id="popupRegist_ivf_1_0_0__clickSent"
+                                onclick="ants_send_contact(this);" type="button" value="HOÀN THÀNH"
+                                fdprocessedid="cv4u3p">
+                            <div class="popupRegist_ivf_1_0_0__contact">
+                                <p>Tư vấn trực tiếp 24/7: <a href="tel:1900.633.988">1900.633.988</a></p>
+                            </div>
+                        </div>
+                    </div>
                     <form>
                         <div class="screen1__input">
-                            <input type="text" id="name" placeholder="Họ tên(*) ">
+                            <!-- <input type="text" id="name" placeholder="Họ tên(*) ">
                             <input type="tel" id="phone" required="" placeholder="Số điện thoại(*)">
                             <input type="text" id="address" placeholder="Địa chỉ(*) ">
-                            <input type="text" id="phone" required="" placeholder="Nội dung cần tư vấn">
+                            <input type="text" id="phone" required="" placeholder="Nội dung cần tư vấn"> -->
+                            <!-- <div>
+                                <input id="iname" name="iname" type="textbox" required="" placeholder="Họ tên*:">
+                                <input id="imob" name="imob" type="textbox" required="" placeholder="Điện thoại*:">
+                                <input type="hidden" style="display:none" id="iemail" name="iemail"
+                                    placeholder="Email:">
+                                <textarea id="itext" type="hidden" name="itext" value=""
+                                    placeholder="Dịch vụ quan tâm"></textarea>
+                                <input type="hidden" id="gclid_field" name="gclid_field" value="">
+                                <input type="hidden" id="code_campaign" name="code_campaign" value="884301791">
+                                <input type="hidden" id="name_campaign" name="name_campaign"
+                                    value="[IVF Bạch Mai] Tư Vấn">
+                            </div> -->
                         </div>
-                        <div class="screen1__submit">
+                        <!-- <div class="screen1__submit">
                             <input onclick="ants_send_contact(this);" class="button-71" type="submit" value="Đăng ký">
-                        </div>
+                        </div> -->
                     </form>
                     <div class="screen1__note">
                         Miễn phí tư vấn và thăm khám <br> cùng chuyên gia >30 năm kinh nghiệm

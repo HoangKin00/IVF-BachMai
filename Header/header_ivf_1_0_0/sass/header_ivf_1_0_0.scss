@@ -326,6 +326,16 @@
       content: none;
     }
 
+    .header_ivf_1_0_0__dropItemTitle:has(
+        > .header_ivf_1_0_0__dropItemSmall
+      )::after {
+      content: "ˇ";
+      position: absolute;
+      right: 0;
+      font-size: 25px;
+      top: 8px;
+    }
+
     &__item:hover {
       .header_ivf_1_0_0__dropdown {
         display: block;
@@ -345,6 +355,10 @@
     }
     .header_ivf_1_0_0__dropItemTitle:hover {
       background-color: #eee;
+      font-weight: bold;
+    }
+    .header_ivf_1_0_0__dropItemTitle:hover .header_ivf_1_0_0__dropItemSmall {
+      font-weight: 400;
     }
     &__dropItem {
       width: 268px;
@@ -396,9 +410,11 @@
       box-shadow: none;
     }
     &__dropItemTitle {
+      position: relative;
       &:hover {
         .header_ivf_1_0_0__dropItemSmall {
-          padding: 5px 15px;
+          padding: 0 15px;
+          margin-top: 5px;
           border-bottom: 1px dotted #eaeaea;
           border-radius: 0;
         }
