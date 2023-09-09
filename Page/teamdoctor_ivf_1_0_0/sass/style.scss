@@ -43,6 +43,7 @@
   &__box {
     padding: 20px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
   }
@@ -50,6 +51,7 @@
     width: 32%;
     background: #008000;
     border-radius: 12px;
+    border: 1px solid #008000;
     color: #fff;
   }
   &__pic {
@@ -73,7 +75,7 @@
     font-weight: 500;
     text-align: center;
     border-bottom: 2px solid #fff;
-    padding: 10px;
+    padding: 10px 2px;
     width: 90%;
     margin: 0 auto;
   }
@@ -120,9 +122,10 @@
 .screen3 {
   background: url(../images/page3-bg.jpg) center 0 no-repeat;
   background-size: cover;
-  padding: 30px 0;
+  padding: 60px 0;
   &__box {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
   &__content {
@@ -173,9 +176,10 @@
 }
 
 .screen4 {
-  padding: 30px 0;
+  padding: 60px 0;
   &__box {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
   &__content {
