@@ -23,7 +23,6 @@
   text-align: center;
   background: none;
   width: 100%;
-  margin-bottom: 20px;
   a {
     background: #008000;
     color: #fff;
@@ -55,7 +54,6 @@
   }
 }
 .screen2 {
-  margin: 35px 0;
   &__box {
     display: flex;
     justify-content: center;
@@ -68,21 +66,17 @@
       width: 100%;
       height: auto;
       display: block;
-      border-radius: 8px;
     }
   }
 }
 .screen3 {
-  padding: 0 0 100px;
+  padding: 0 0 30px;
   &__pic {
     padding-top: 20px;
-    width: 550px;
-    margin: 0 auto;
     img {
       width: 100%;
       height: auto;
       display: block;
-      border-radius: 8px;
     }
   }
 }
@@ -102,7 +96,6 @@
     font-size: 12px;
   }
   .screen1 {
-    padding: 30px 0 0px;
     &__box {
       flex-direction: column;
       gap: 20px;
@@ -115,21 +108,12 @@
     }
   }
   .screen2 {
-    margin: 0;
     &__box {
       gap: 10px;
       flex-direction: column;
-      padding: 10px 0 20px;
     }
     &__pic {
       width: 100%;
-    }
-  }
-  .screen3 {
-    padding: 0 0 60px;
-    &__pic {
-      width: 100%;
-      padding-top: 10px;
     }
   }
 }
