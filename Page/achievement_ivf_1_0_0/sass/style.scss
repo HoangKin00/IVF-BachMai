@@ -115,15 +115,22 @@
     }
   }
   .screen2 {
+    margin: 0;
     &__box {
       gap: 10px;
       flex-direction: column;
+      padding: 10px 0 20px;
     }
     &__pic {
       width: 100%;
     }
   }
   .screen3 {
+    padding: 0 0 65px;
+    &__pic {
+      width: 100%;
+      padding-top: 10px;
+    }
     padding: 0 0 70px;
   }
 }
